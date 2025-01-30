@@ -116,17 +116,3 @@
         (as-contract (stx-transfer? stxToPay CONTRACT_ADDRESS callerAddress))
     )
 )
-
-;; Mint some Miami coin token 
-;; (contract-call? 'SP466FNC0P7JWTNM2R9T199QRZN1MYEDTAR0KP27.miamicoin-token test-mint u10000 tx-sender)
-
-;; Provide Liquidity (Initial or Additional)
-;; (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.dex_2 provide-liquidity 'SP466FNC0P7JWTNM2R9T199QRZN1MYEDTAR0KP27.miamicoin-token u5000 u10000)
-
-;; Remove Liquidity
-;; (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.dex_2 remove-liquidity 'SP466FNC0P7JWTNM2R9T199QRZN1MYEDTAR0KP27.miamicoin-token u1000)
-
-;; Swaps with fee being charged
-;; (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.dex_2 swap-stx-to-token 'SP466FNC0P7JWTNM2R9T199QRZN1MYEDTAR0KP27.miamicoin-token u100)
-
-;; (contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.dex_2 swap-token-to-stx 'SP466FNC0P7JWTNM2R9T199QRZN1MYEDTAR0KP27.miamicoin-token u50)
