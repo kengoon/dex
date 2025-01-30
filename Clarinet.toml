@@ -15,6 +15,11 @@ path = 'contracts/dex.clar'
 clarity_version = 2
 epoch = 2.5
 
+[contracts.dex_1]
+path = 'contracts/dex_1.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.dex_2]
 path = 'contracts/dex_2.clar'
 clarity_version = 2
