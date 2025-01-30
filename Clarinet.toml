@@ -1,0 +1,39 @@
+[project]
+name = 'dex'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.Ip-token]
+path = 'contracts/Ip-token.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.dex]
+path = 'contracts/dex.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.dex_2]
+path = 'contracts/dex_2.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts."external/token-austin"]
+path = 'contracts/external/token-austin.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts."external/traits"]
+path = 'contracts/external/traits.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
